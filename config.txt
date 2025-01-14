@@ -1,0 +1,13 @@
+? T is True, F is False
+? Not all of these are implemented yet!
+? General functionality
+UseSeed=F
+Seed=This is v8 of the BLiNX randomizer! v7 was going to be the next version, but I forgot to add spike door randomization when I made the zip. Sorry!
+RandomizeEnemies=T
+RandomizeTrash=T
+RandomizeItems=T
+RandomizeInteractiveObjects=T
+RandomizeItemVisuals=F
+? Patches (boss gold drops is a patch, so it has been moved to this section)
+RandomizeBossGoldDrops=T
+GoldSpawnsOverSomeCrystals=T
