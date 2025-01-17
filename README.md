@@ -13,3 +13,5 @@ And supports the following file types as input:
 - XDVDFS (XISO images)
 
 The end goal is to keep this compatible with every version of the game while randomizing as many gameplay elements as possible.
+
+Another goal is to ensure the game is still beatable from start to finish - that's why Water Spirits and Fire Spirits don't get randomized into every stage.
