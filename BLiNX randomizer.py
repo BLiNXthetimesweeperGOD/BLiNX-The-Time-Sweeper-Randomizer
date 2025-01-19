@@ -72,8 +72,8 @@ def getOffsetFromTable(blinx, tableOffset, offsetFixer, tableID, stage):
 patched = False
 badStages = badstages()
 #enemies = enemies() #Grab the enemy table from (root folder)/libraries/tables.py
-tableOffset, offsetFixer = getOffsets(xbe) #Get the start offset of the table and a value to correct pointers
-
+tableOffset, offsetFixer, stageTableOffset = getOffsets(xbe) #Get the start offset of the table and a value to correct pointers
+print(stageTableOffset)
 with open(xbe, "rb") as blinx: #It's him!
     for stage in range(40):
         #These are pointers to the table headers. Since some are going to end up being less than 0, we do a check later on to avoid those ones.
@@ -90,6 +90,10 @@ with open(xbe, "rb") as blinx: #It's him!
         if not patched:
             makeGoldSometimesSpawnInPlaceOfCrystals(outputName, loadSettingFromConfigFile("GoldSpawnsOverSomeCrystals"))
             randomizeBossDrops(outputName, loadSettingFromConfigFile("RandomizeBossGoldDrops"))
+            randomizeBoxColors(outputName, loadSettingFromConfigFile("RandomizeBoxColors"))
+            customizeBoxColors(outputName, loadSettingFromConfigFile("CustomizeBoxColors"))
+            randomizeShopVisualsAndPrices(outputName, loadSettingFromConfigFile("RandomizeShopVisualsAndPrices"))
+            randomizeTimeControlColors(outputName, loadSettingFromConfigFile("RandomizeTimeControlColors"))
             patched = True
 
         #Randomizers

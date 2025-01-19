@@ -94,7 +94,7 @@ def getOffsets(file): #Old code, could use a rewrite
                     NewOffset = (sectionMath-offset)*-1
                     print(tables[C]+" (adjusted):", hex(NewOffset))
                     if tables[C].startswith("Stage"):
-                        return NewOffset, sectionMath
+                        return NewOffset, sectionMath, (sectionMath-offsets[1])*-1
                     C+=1
                 if C == 2: #Platinum Hits
-                    return 0x372918, sectionMath
+                    return 0x372918, sectionMath, (sectionMath-offsets[1])*-1
