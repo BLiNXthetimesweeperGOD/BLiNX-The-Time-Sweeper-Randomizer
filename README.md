@@ -7,6 +7,8 @@ This randomizer currently randomizes the following:
 - Time crystals and gold
 - Boss drops (instead of gold, you could get [Cones](https://github.com/user-attachments/assets/ebd2cdcc-1d69-4537-9d64-909325b358f0))
 - Button and door types
+- Various UI colors (the time control icons and save boxes)
+- Shop item prices and visuals
 
 And supports the following file types as input:
 - Xbox Executables (XBE)
